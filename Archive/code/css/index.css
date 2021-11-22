@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-container nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-image: linear-gradient(#5dade2, white);
+  margin-bottom: 30px;
+}
+.index-container nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.index-container nav a:hover {
+  background-color: #2e86c1;
+}
+
+.index-container .splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.index-container .splash h1 {
+  font-size: 70px;
+}
+.index-container .splash p {
+  font-size: 30px;
+}
+
+.index-container .splash .splash-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.index-container .splash .splash-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+/* Typing Animation */
+.index-container .intro {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.3em solid #1f618d; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+  /* additional styling */
+  margin-top: 30px;
+  font-size: 24px;
+}
+/* .index-container .delay {
+  animation-delay: 10s;
+  animation: cssAnimation 0s 5s forwards;
+  visibility: hidden;
+}
+@keyframes cssAnimation {
+  to {
+    visibility: visible;
+  }
+} */
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #1f618d;
+  }
+}

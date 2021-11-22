@@ -1,0 +1,11 @@
+.color-blue {
+  color: blue;
+}
+
+.name {
+  color: green;
+  background-color: grey;
+  font-size: 60px;
+  border: 3px dashed red;
+  text-align: center;
+}

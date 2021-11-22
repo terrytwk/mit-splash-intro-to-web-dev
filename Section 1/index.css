@@ -1,0 +1,11 @@
+.title {
+  color: rgb(22, 126, 48);
+  font-size: 100px;
+  background-color: red;
+  border: 5px solid red;
+  text-align: center;
+}
+
+.apple {
+  color: red;
+}
